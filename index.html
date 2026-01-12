@@ -11,8 +11,82 @@
       <h1>PC教室 お申し込みフォーム</h1>
     </header>
     <div>
-      <label for="name">氏名：<span>必須</span></label>
-      <input type="text" id="text" name="name" required />
+      <p>お問い合わせ</p>
+      <p>TEL:000-0000-0000</p>
+      <p>（平日9:00～17:00）</p>
     </div>
+    <form action="">
+      <div>
+        <label for="name">氏名<span>*</span></label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="山田太郎"
+          required
+        />
+      </div>
+      <div>
+        <label for="furigana">フリガナ<span>*</span></label>
+        <input
+          type="text"
+          name="furigana"
+          id="furigana"
+          placeholder="ヤマダタロウ"
+          required
+        />
+      </div>
+      <div>
+        <label for="birthdate">生年月日<span>*</span></label>
+        <select name="year" id="select_year"></select
+        >年
+        <select name="month" id="select_month"></select
+        >月
+        <select name="day" id="select_day"></select
+        >日
+      </div>
+      <div>
+        <label for="tel">電話番号<span>*</span></label>
+        <input type="tel" name="tel" id="tel" />
+      </div>
+      <div>
+        <label for="email">メールアドレス<span>*</span></label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <div>
+        <label for="participationdate">参加希望日を選択<span>*</span></label>
+        <select name="participationdate" id="participationdate">
+          <option value="">第一希望日を選択</option>
+          <option value="day-one">2026年02月01日</option>
+          <option value="day-two">2026年02月02日</option>
+          <option value="day-three">2026年02月03日</option>
+        </select>
+
+        <select name="participationdate" id="participationdate">
+          <option value="">第二希望日を選択</option>
+          <option value="day-one">2026年02月01日</option>
+          <option value="day-two">2026年02月02日</option>
+          <option value="day-three">2026年02月03日</option>
+        </select>
+
+        <select name="participationdate" id="participationdate">
+          <option value="">第三希望日を選択</option>
+          <option value="day-one">2026年02月01日</option>
+          <option value="day-two">2026年02月02日</option>
+          <option value="day-three">2026年02月03日</option>
+        </select>
+      </div>
+      <div>
+        <input type="checkbox" name="termsofservice" id="termsofservice" />
+        <label for="termsofservice"
+          ><a href="#">利用規約</a>に同意します。</label
+        >
+      </div>
+      <input type="checkbox" name="privacypolicy" id="privacypolicy" />
+      <label for="privacypolicy"
+        ><a href="#">プライバシーポリシー</a>に同意します。</label
+      >
+      <button type="submit">内容を確認</button>
+    </form>
   </body>
 </html>
