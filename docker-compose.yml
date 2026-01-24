@@ -1,0 +1,40 @@
+version: '3.8'
+services:
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: pc-form
+    depends_on:
+      - pc-reception-form
+    environment:
+      PMA_HOST: fujii-form
+      PMA_PORT: 4406
+      PMA_USER: fujii     # 必要に応じて変更
+      PMA_PASSWORD: fujiidan222    # 必要に応じて変更
+    ports:
+      - "8082:80"
+    volumes:
+      - ./phpmyadmin/sessions:/sessions
+      
+  form-db:
+    image: mysql:8.0
+    container_name: reception-form
+    environment:
+      MYSQL_ROOT_PASSWORD: fujiidan222
+      MYSQL_DATABASE: form-data
+      MYSQL_USER: fujii
+      MYSQL_PASSWORD: fujiidan222
+    ports:
+      - "4407:4407"
+    volumes:
+      - db_data:/var/lib/mysql
+    
+  form-web:
+    image: httpd:latest
+    container_name: pc-reception-form
+    ports:
+      - "8090:90"
+    volumes:
+      - ./html:/usr/local/apache2/htdocs/
+      
+volumes:
+  db_data:
