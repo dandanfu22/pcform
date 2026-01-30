@@ -37,23 +37,61 @@ form div {
 .required {
     color: red;
 }
+.name {
+    display: grid;
+}
 .name label {
-    margin-left: 20px;
+    text-align: left;
+    padding-bottom: 10px;
 }
 .name input {
-    margin-left: 20px;
+    padding: 8px;
+}
+.furigana {
+    display: grid;
+}
+.furigana input {
+    padding: 8px;
+}
+.furigana label {
+    text-align: left;
+    padding-bottom: 10px;
 }
 .birthday select {
-    margin-left: 20px;
-}
-.mail label {
-    padding-right: 10px;
+    margin-left: 15px;
+    padding: 0 30px;
 }
 .birthday select {
     border-radius: 10px;
     width: 50px;
     height: 30px;
     border: none;
+}
+
+.tel-number {
+    display: grid;
+}
+.tel-number label {
+    text-align-last: left;
+    padding-bottom: 10px;
+}
+.tel-number input {
+    padding: 8px;
+}
+
+.mail {
+    display: grid;
+}
+.mail input {
+    padding: 8px;
+}
+.mail label {
+    text-align-last: left;
+    padding-bottom: 10px;
+}
+
+.Schedule {
+    
 }
 .Schedule select {
     border-radius: 10px;
