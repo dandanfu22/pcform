@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 1rem;
+}
+label {
+    font-weight: bold;
+}
+input {
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+select {
+    border: none;
+    border-radius: 20px;
+}
+.required {
+    color: red;
+}
+.all {
+    background-color: #D9D9D9;
+    margin: 0 20px;
+    border-radius: 20px;
+}
+header h1 {
+    font-size: 20px;
+    padding: 10px 0;
+    text-align: center;
+}
+header p {
+    text-align: center;
+}
+.inquiry {
+    font-weight: bold;
+}
+.inquiry-time {
+    padding-bottom: 10px;
+}
+.name {
+    display: grid;
+    margin: 0 30px 0 0;
+    padding: 0 15%;
+}
+.name label {
+    padding-bottom: 5px;
+}
+.furigana {
+    display: grid;
+    margin: 5px 30px 0 0;
+    padding: 0 15%;
+}
+.furigana label {
+    padding-bottom: 5px;
+}
+.birthday {
+    margin: 5px 30px 0 0;
+    padding: 0 15%;
+}
+.birthday select {
+    padding: 5px 5px;
+}
+.tel-number {
+    display: grid;
+    margin: 5px 30px 0 0;
+    padding: 0 15%;
+}
+.tel-number label {
+    padding-bottom: 5px;
+}
+.mail {
+    display: grid;
+    margin: 5px 30px 0 0;
+    padding: 0 15%;
+}
+.mail label {
+    padding-bottom: 5px;
+}
+.Schedule {
+    display: grid;
+}
+.Schedule label {
+    padding: 5px 15%;
+}
+.Schedule select {
+    padding: 8px;
+    margin: 5px 50px;
+}
+.agree {
+    margin: 5px 50px;
+}
+.agree-termsofservice {
+    display: flex;
+}
+
+#termsofservice {
+    margin: 20px 0 0 0;
+    border: none;
+    width: 30px;
+    height: 20px;
+}
+.termsofservice {
+    padding-bottom: 10px;
+}
+#privacypolicy {
+    margin: 10px 0 0 50px;
+    border: none;
+    width: 30px;
+    height: 20px;
+}
+.privacypolicy {
+    font-size: 14px;
+}
+.agree-privacypolicy {
+    display: flex;
+}
+.agree-privacypolicy label {
+    padding-top: 10px;
+}
