@@ -17,6 +17,9 @@ select {
     border: none;
     border-radius: 20px;
 }
+button {
+    border: none;
+}
 .required {
     color: red;
 }
@@ -91,19 +94,6 @@ header p {
 .agree {
     margin: 5px 50px;
 }
-.agree-termsofservice {
-    display: flex;
-}
-
-#termsofservice {
-    margin: 20px 0 0 0;
-    border: none;
-    width: 30px;
-    height: 20px;
-}
-.termsofservice {
-    padding-bottom: 10px;
-}
 #privacypolicy {
     margin: 10px 0 0 50px;
     border: none;
@@ -118,4 +108,34 @@ header p {
 }
 .agree-privacypolicy label {
     padding-top: 10px;
+}
+
+#termsofservice {
+    margin: 10px 0 0 50px;
+    border: none;
+    width: 30px;
+    height: 20px;
+}
+.termsofservice {
+    font-size: 14px;
+}
+.agree-termsofservice {
+    display: flex;
+}
+.agree-termsofservice label {
+    padding-top: 10px;
+}
+
+.submit-button {
+    padding: 30px 0 30px 0;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+}
+.submit-button button {
+    background-color: #009D5B;
+    padding: 15px 20px;
+    border-radius: 20px;
 }
