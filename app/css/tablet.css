@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 1rem;
+}
+button {
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+}
+input {
+    border: none;
+    border-radius: 20px;
+    width: 20%;
+    padding: 0.5% 1%;
+    width: 50%;
+}
+label {
+    font-size: 1.2rem;
+    /* text-align: center; */
+}
+select {
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+}
+header {
+    text-align: center;
+    padding-top: 20px;
+}
+.inquiry {
+    padding-top: 10px;
+    font-weight: bold;
+}
+.all {
+    background-color: #d9d9d9;
+    margin: 30px 5% 0 5%;
+    border-radius: 50px;
+}
+.required {
+    color: red;
+}
+form {
+    padding: 0 0 15% 15%;
+}
+form div {
+    padding: 2% 0;
+}
+.name {
+    display: grid;
+}
+.name label {
+    padding-bottom: 10px;
+}
+.name input {
+    font-size: 17px;
+    text-align: left;
+    padding: 10px 25px;
+}
+
+.furigana {
+    display: grid;
+}
+.furigana label {
+    padding-bottom: 10px;
+}
+.furigana input {
+    font-size: 17px;
+    text-align: left;
+    padding: 10px 25px;
+}
+
+.birthday select {
+    padding: 10px 30px;
+    font-size: 17px;
+}
+
+.tel-number {
+    display: grid;
+}
+.tel-number label {
+    padding-bottom: 10px;
+}
+.tel-number input {
+    font-size: 17px;
+    padding: 10px 25px;
+}
+
+.mail {
+    display: grid;
+}
+.mail label {
+    padding-bottom: 10px;
+}
+.mail input {
+    font-size: 17px;
+    padding: 10px 30px;
+}
+
+.agree-termsofservice input[type=checkbox] {
+    width: 30px;
+    height: 20px;
+    padding-top: 10px;
+}
+.agree-termsofservice {
+    display: flex;
+    align-items: center; 
+    gap: 5px;
+
+}
+.agree-privacypolicy {
+    display: flex;
+    align-items: center; 
+    gap: 4px;
+
+}
+.agree-privacypolicy input[type=checkbox] {
+    width: 30px;
+    height: 20px;
+    padding-top: 10px;
+}
+.submit-button span {
+    font-weight: bold;
+    color: #202124;
+}
+.submit-button button {
+    background-color: #009D5B;
+    font-size: 19px;
+    padding: 15px 30px;
+}
+.submit-button {
+    display: flex;
+    padding-top: 30px;
+    margin: 0 25%;
+}
