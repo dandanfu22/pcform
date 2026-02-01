@@ -91,6 +91,7 @@ header p {
     padding: 8px;
     margin: 5px 50px;
 }
+
 .agree {
     margin: 5px 50px;
 }
@@ -134,7 +135,7 @@ header p {
     align-items: center; 
 
 }
-.submit-button button {
+.submit-button input {
     background-color: #009D5B;
     padding: 15px 20px;
     border-radius: 20px;

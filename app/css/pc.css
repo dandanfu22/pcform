@@ -20,9 +20,6 @@ label {
     margin: 30px 10% 0 10%;
     border-radius: 50px;
 }
-header {
-    padding: 50px 0 20px 20%;
-}
 .inquiry {
     padding-top: 5px;
     font-weight: bold;
@@ -58,13 +55,10 @@ form div {
     padding-bottom: 10px;
 }
 .birthday select {
-    margin-left: 15px;
-    padding: 0 30px;
-}
-.birthday select {
+    text-align: center;
     border-radius: 10px;
-    width: 50px;
-    height: 30px;
+    width: 120px;
+    height: 40px;
     border: none;
 }
 
@@ -89,14 +83,10 @@ form div {
     text-align-last: left;
     padding-bottom: 10px;
 }
-
-.Schedule {
-    
-}
 .Schedule select {
     border-radius: 10px;
     width: 200px;
-    height: 30px;
+    height: 50px;
     border: none;
 }
 #termsofservice {
@@ -116,7 +106,7 @@ form div {
     font-weight: bold;
     color: #202124;
 }
-.submit-button button {
+.submit-button input {
     background-color: #009D5B;
     font-size: 18px;
     border: none;

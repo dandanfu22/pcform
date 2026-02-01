@@ -125,7 +125,7 @@ form div {
     font-weight: bold;
     color: #202124;
 }
-.submit-button button {
+.submit-button input {
     background-color: #009D5B;
     font-size: 19px;
     padding: 15px 30px;
