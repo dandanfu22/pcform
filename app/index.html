@@ -13,6 +13,11 @@
       href="/app/css/smartphone.css"
       media="screen and (max-width:480px)"
     />
+    <link
+      rel="stylesheet"
+      href="/app//css/tablet.css"
+      media="screen and (min-width:820px)"
+    />
     <title>PC教室 お申し込みフォーム</title>
   </head>
   <body>
@@ -28,12 +33,9 @@
         </p>
       </header>
 
-      <form
-        action="https://script.google.com/macros/s/AKfycbwWmRYiiOz4e88qF1lurXbTP0TlHvlES5x49qRky_RXS9oZ1mmttCb_BTB78kazJQjwjQ/exec"
-        method="post"
-      >
+      <form id="pcform" action="html/confirm.html" method="get">
         <div class="name">
-          <label for="name">氏名<span class="required">*</span></label>
+          <label for="name">お名前<span class="required">*</span></label>
           <input
             type="text"
             name="name"
@@ -290,7 +292,9 @@
             value="同意"
           />
           <label for="termsofservice" class="termsofservice"
-            ><a href="#">利用規約</a>に同意します。</label
+            ><a href="#">利用規約</a>に同意します。<span style="color: red"
+              >*</span
+            ></label
           >
         </div>
         <div class="agree-privacypolicy">
@@ -301,15 +305,31 @@
             value="同意"
           />
           <label for="privacypolicy" class="privacypolicy"
-            ><a href="#">プライバシーポリシー</a>に同意します。</label
+            ><a href="#">プライバシーポリシー</a>に同意します。<span
+              style="color: red"
+              >*</span
+            ></label
           >
         </div>
+
+        <div id="warning" style="display: none">
+          <p>
+            <span style="color: red">*</span>
+            <span style="font-weight: bold">利用規約に同意します。</span
+            >は必須です。
+          </p>
+          <p>
+            <span style="color: red">*</span>
+            <span style="font-weight: bold"
+              >プライバシーポリシーに同意します。</span
+            >は必須です。
+          </p>
+        </div>
         <div class="submit-button">
-          <button type="submit"><span>内容を確認</span></button>
+          <input id="submit-b" type="submit" value="確認する" />
         </div>
       </form>
     </div>
-    <!-- 使わない -->
-    <!-- <script src="js/script.js"></script> -->
+    <script src="/app/js/script.js"></script>
   </body>
 </html>
