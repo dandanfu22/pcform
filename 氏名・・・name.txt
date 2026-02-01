@@ -1,0 +1,13 @@
+氏名・・・name
+フリガナ・・・furigana
+生年月日・・・year,month,day
+電話番号・・・tel
+メール・・・email
+
+参加希望
+第1希望・・・participationdate1
+第2希望・・・participationdate2
+第3希望・・・participationdate3
+
+利用規約・・・termsofservice
+プライバシーポリシー・・・privacypolicy

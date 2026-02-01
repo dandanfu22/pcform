@@ -35,7 +35,7 @@ services:
     ports:
       - "8090:80"
     volumes:
-      - ./app:/html
+      - ./app:/index.html
       
 volumes:
   db_data:
