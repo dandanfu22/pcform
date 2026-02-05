@@ -16,14 +16,14 @@
     <link
       rel="stylesheet"
       href="/app//css/tablet.css"
-      media="screen and (min-width:820px)"
+      media="screen and (max-width:835px)"
     />
     <title>PC教室 お申し込みフォーム</title>
   </head>
   <body>
     <div class="all">
       <header>
-        <h1>PC教室 お申し込みフォーム</h1>
+        <h1>お申し込みフォーム</h1>
         <p class="inquiry">お問い合わせ</p>
         <p class="inquiry-tel">
           <span style="font-weight: bold">TEL:</span>000-0000-0000
@@ -57,7 +57,7 @@
         <div class="birthday">
           <label for="birthdate">生年月日<span class="required">*</span></label>
           <div style="padding-top: 10px">
-            <select name="year" id="select_year">
+            <select name="year" id="select_year" required>
               <option value="">-</option>
               <option value="1900">1900</option>
               <option value="1901">1901</option>
@@ -191,7 +191,7 @@
               <option value="2029">2029</option>
               <option value="2030">2030</option></select
             >年
-            <select name="month" id="select_month">
+            <select name="month" id="select_month" required>
               <option value="">-</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -206,7 +206,7 @@
               <option value="11">11</option>
               <option value="12">12</option></select
             >月
-            <select name="day" id="select_day">
+            <select name="day" id="select_day" required>
               <option value="">-</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -244,7 +244,13 @@
         </div>
         <div class="tel-number">
           <label for="tel">電話番号<span class="required">*</span></label>
-          <input type="tel" name="tel" id="tel" placeholder="000-0000-0000" />
+          <input
+            type="tel"
+            name="tel"
+            id="tel"
+            placeholder="000-0000-0000"
+            required
+          />
         </div>
         <div class="mail">
           <label for="email"
@@ -255,6 +261,7 @@
             name="email"
             id="email"
             placeholder="aaa@aaa.aaa.aa"
+            required
           />
         </div>
         <div class="Schedule">
@@ -262,21 +269,21 @@
             >参加希望日を選択<span class="required">*</span></label
           >
           <div>
-            <select name="participationdate1" id="participationdate1">
+            <select name="participationdate1" id="participationdate1" required>
               <option value="なし">第一希望日を選択</option>
               <option value="2026-02-01">2026年02月01日</option>
               <option value="2026-02-02">2026年02月02日</option>
               <option value="2026-02-03">2026年02月03日</option>
             </select>
 
-            <select name="participationdate2" id="participationdate2">
+            <select name="participationdate2" id="participationdate2" required>
               <option value="なし">第二希望日を選択</option>
               <option value="2026-02-01">2026年02月01日</option>
               <option value="2026-02-02">2026年02月02日</option>
               <option value="2026-02-03">2026年02月03日</option>
             </select>
 
-            <select name="participationdate3" id="participationdate3">
+            <select name="participationdate3" id="participationdate3" required>
               <option value="なし">第三希望日を選択</option>
               <option value="2026-02-01">2026年02月01日</option>
               <option value="2026-02-02">2026年02月02日</option>
@@ -290,6 +297,7 @@
             name="termsofservice"
             id="termsofservice"
             value="同意"
+            required
           />
           <label for="termsofservice" class="termsofservice"
             ><a href="#">利用規約</a>に同意します。<span style="color: red"
@@ -303,6 +311,7 @@
             name="privacypolicy"
             id="privacypolicy"
             value="同意"
+            required
           />
           <label for="privacypolicy" class="privacypolicy"
             ><a href="#">プライバシーポリシー</a>に同意します。<span
