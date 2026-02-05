@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/app/css/confirm/pc.css"
+      media="screen and (min-width:1024px)"
+    />
+    <link rel="stylesheet" href="" media="screen and (max-width:480px)" />
+    <link rel="stylesheet" href="" media="screen and (min-width:820px)" />
     <title>PC教室 お申し込みフォーム</title>
   </head>
   <body>
@@ -10,10 +17,10 @@
       <h1>PC教室お申込みフォーム</h1>
       <h2>お申込み内容のご確認</h2>
     </header>
-    <div>
+    <div class="all">
       <p>お名前: <span id="c-name"></span></p>
       <p>フリガナ: <span id="c-furigana"></span></p>
-      <p>
+      <p class="birthdate">
         生年月日: <span id="c-year"></span> 年 <span id="c-month"></span> 月
         <span id="c-day"></span> 日
       </p>
